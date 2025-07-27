@@ -2,16 +2,98 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Bienvenido a nuestro primer sitio web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VetFinder | Tu veterinaria al instante</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #2e86c1;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: #154360;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px;
+      background-color: #d6eaf8;
+    }
+
+    .botones {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .botones a {
+      background-color: #2e86c1;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #154360;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      .botones {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Hola, somos el equipo de "VetFinder: Un directorio para Urgencias Veterinarias" </h1>
-  <p>El equipo esta conformado por: </p>
-  <ul>
-  <li>Cristina Osorio</li>
-  <li>Felipe Fernandez</li>
-  <li>Luis Dario</li>
-  <li>Daniel Arcizo</li>
-</ul>
+  <header>
+    <h1>VetFinder</h1>
+    <p>Encuentra veterinarias cerca de ti</p>
+  </header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Sobre VetFinder</a>
+    <a href="#">Servicios</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Tu mascota merece atención inmediata</h2>
+    <p>Encuentra atención veterinaria 24/7 con solo un clic.</p>
+    <div class="botones">
+      <a href="#">Ver App Android</a>
+      <a href="#">Buscar Veterinaria</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 VetFinder | Desarrollado por Juan Daniel Arcizo</p>
+  </footer>
 </body>
 </html>
